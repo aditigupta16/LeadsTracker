@@ -80,8 +80,6 @@ test_failures/
 htmlcov/
 diff-coverage.html
 
-# uploaded local media
-thistle/media/
 
 # Celery
 celerybeat.pid
