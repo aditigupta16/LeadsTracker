@@ -1,0 +1,89 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+# Basics
+*.py[cod]
+*.pyc
+__pycache__
+.mypy_cache/
+
+# Logs
+*.log
+pip-log.txt
+coverage/
+
+# Unit test / coverage reports
+.coverage*
+.tox
+nosetests.xml
+coverage.xml
+.hypothesis
+
+# Translations
+*.mo
+*.pot
+
+# Pycharm
+.idea
+
+# Vim
+
+*~
+*.swp
+*.swo
+
+# npm
+node_modules/
+
+# Compass
+.sass-cache
+
+# Asset bundles
+dist
+webpack-stats.json
+
+# virtual environments
+.env
+/venv
+staticfiles/
+media/
+config/settings/developer.py
+.python-version
+.ipynb_checkpoints/
+
+# db dump files
+dump.json
+latest.dump
+latest_report_data.dump
+dump.rdb
+
+# test failure artifacts
+test_failures/
+htmlcov/
+diff-coverage.html
+
+# uploaded local media
+thistle/media/
+
+# Celery
+celerybeat.pid
+flower
+celerybeat-schedule
