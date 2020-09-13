@@ -19,5 +19,11 @@
   "scripts": {
     "dev": "webpack --mode development ./src/index.js --output ./static/frontend/main.js",
     "build": "webpack --mode production ./src/index.js --output ./static/frontend/main.js"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "framer-motion": "^2.6.13",
+    "react-router-dom": "^5.2.0"
   }
 }

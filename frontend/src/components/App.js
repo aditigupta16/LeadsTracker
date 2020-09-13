@@ -1,47 +1,33 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import { BrowserRouter, Route, } from 'react-router-dom';
+import ListLeads from "./ListLeads.js";
+import CreateLead from "./CreateLead.js";
+import {
+    Box,
+    Button,
+    Card,
+    CardContent,
+    CardHeader,
+    Container,
+    Divider,
+    Grid,
+    Link,
+    Typography,
+    Avatar,
+    withStyles,
+    MuiThemeProvider,
+    createMuiTheme,
+} from "@material-ui/core";
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            data: [],
-            loaded: false,
-            placeholder: "Loading"
-        };
-    }
-
-    componentDidMount() {
-        fetch("api/lead")
-            .then(response => {
-                if (response.status > 400) {
-                    return this.setState(() => {
-                        return { placeholder: "Something went wrong!" };
-                    });
-                }
-                return response.json();
-            })
-            .then(data => {
-                this.setState(() => {
-                    return {
-                        data,
-                        loaded: true
-                    };
-                });
-            });
-    }
 
     render() {
         return (
-            <ul>
-                {this.state.data.map(contact => {
-                    return (
-                        <li key={contact.id}>
-                            {contact.name} - {contact.email}
-                        </li>
-                    );
-                })}
-            </ul>
+            <BrowserRouter>
+                <Route exact path="/" component={ListLeads}/>
+                <Route path="/create-lead/" component={CreateLead} />
+            </BrowserRouter>
         );
     }
 }
