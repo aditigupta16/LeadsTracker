@@ -37,6 +37,7 @@ class ListLeads extends  Component {
 
         return(
             <Grid container >
+                <Grid container>
                 {this.state.data.map(contact => {
                     return (
                         <Grid item key={contact.id} xs={12}>
@@ -46,6 +47,7 @@ class ListLeads extends  Component {
                         </Grid>
                     );
                 })}
+                </Grid>
                 <Link href={"localhost:8000/create-lead/"}>Create Lead</Link>
 
             </Grid>

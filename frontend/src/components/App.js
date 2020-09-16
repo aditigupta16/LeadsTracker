@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { BrowserRouter, Route, } from 'react-router-dom';
+import { BrowserRouter, Route} from 'react-router-dom';
 import ListLeads from "./ListLeads.js";
 import CreateLead from "./CreateLead.js";
 import {
